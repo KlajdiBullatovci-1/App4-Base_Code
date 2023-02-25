@@ -47,8 +47,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	}
 	
 	function domsAdd(){
-		doms_count=doms_count+1	
+		doms_count=doms_count+1;	
 	}
+	
+	function getResults(){
+		if(rhabdo_count>doms_count){
+			document.write("Probability of you having rhabdomyolitis is "+(rhabdo_count/totalamount)*100+"%.<br>");
+		}
+		
+		else if(doms_count>rhabdo_count){
+			document.write("Probability of you having Delayed Onset Muscle Soreness is "+(doms_count/totalamount)*100+"%.<br>");
+		}
+		
 
 </script>	
 
