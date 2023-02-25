@@ -103,20 +103,42 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> <!Cautionary label for first page>
+	
+<div class="page" id="one"> <!Creates and IDs the page as one>
+	<div id="header" class="w3-container w3-flat-carrot">
 
-</div>
 		<h1>Question 1</h1> <!Displays title of question>
+</div>
 	
         <p>Do you feel only minor muscle soreness after a workout?</p> <!Displays question on the page>
 		<a href="#two" onclick="domsAdd();" class="w3-btn w3-black"> Yes </a> <!Creates yes button for question 1>
          	<a href="#two" onclick="rhabdoAdd();" class="w3-btn w3-black"> No </a> <!Creates no button for question 1>
 	<img src="https://st2.depositphotos.com/1106973/8767/i/600/depositphotos_87678406-stock-photo-man-with-pain-in-shoulder.jpg?forcejpeg=true" alt="muscle soreness">
-	        <h1>Question 2</h1> <!Displays title of question>
-	
+	</div>
+</div>
+	        
+<div class="page" id="two"> <!Creates and IDs the page as one>
+	<div id="header" class="w3-container w3-flat-carrot">
+
+		<h1>Question 2</h1> <!Displays title of question>
+</div>
 	 <p>Is your urine an abnormally dark color?</p> <!Displays question on the page>
-		<a href="#two" onclick="rhabdoAdd();" class="w3-btn w3-black"> Yes </a> <!Creates yes button for question 2>
-         	<a href="#two" onclick="domsAdd();" class="w3-btn w3-black"> No </a> <!Creates no button for question 2>
+		<a href="#three" onclick="rhabdoAdd();" class="w3-btn w3-black"> Yes </a> <!Creates yes button for question 2>
+         	<a href="#three" onclick="domsAdd();" class="w3-btn w3-black"> No </a> <!Creates no button for question 2>
 	<img src="https://www.disc-me.com/wp-content/uploads/2019/07/Rhabdomyolysis-figure-2-1-768x578.jpg" alt="rhabdo diagram">
+	</div>
+</div>
+	<div class="page" id="three"> <!Creates and IDs the page as one>
+	<div id="header" class="w3-container w3-flat-carrot">
+
+		<h1>Question 3</h1> <!Displays title of question>
+</div>
+	 <p>Do your muscles hurt only when actively moving and not during rest?</p> <!Displays question on the page>
+		<a href="#four" onclick="domsAdd();" class="w3-btn w3-black"> Yes </a> <!Creates yes button for question 3>
+         	<a href="#four" onclick="rhabdoAdd();" class="w3-btn w3-black"> No </a> <!Creates no button for question 3>
+	<img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/327/327138/a-man-holding-his-leg-because-he-has-muscle-soreness.jpg" alt="leg muscle pain">
+	</div>
+</div>
 	
 </body>
 </html>
