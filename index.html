@@ -59,6 +59,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			document.write("Probability of you having Delayed Onset Muscle Soreness is "+(doms_count/totalamount)*100+"%.<br>");
 		}
 		
+		else if(doms_count=rhabdo_count){
+			document.write("Equal probability, please see a healthcare professional for further help.");
+		}
+		
 </script>	
 
 
@@ -156,6 +160,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>See results</h1> <!Displays title of page>
 </div>
 	 <p>See your results here!</p> <!Displays question on the page>
+	 <p id="result"></p>
 		<a href="#five" onclick="getResults();" class="w3-btn w3-black"> Results </a> <!Creates results button>
 	</div>
 </div>
