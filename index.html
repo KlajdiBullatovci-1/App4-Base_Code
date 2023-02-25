@@ -20,7 +20,7 @@ Brief Description of Goal of Code:
 Diagnose whether or not condition is Delayed Onset Muscle Soreness (DOMS) or rhabdomyolitis
  
 Known Issues:
-
+N/A
 Ignore this error message if you see it using the javaScript console: Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
 
 References:
@@ -38,29 +38,29 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-        var rhabdo_count=0;
-	var doms_count=0;
-	var totalamount=4;
+        var rhabdo_count=0; //accounts for rhabdo variable 
+	var doms_count=0; //accounts for DOMS variable
+	var totalamount=4; //accounts for total amount of points possible
 	 
-	function rhabdoAdd(){
-		rhabdo_count=rhabdo_count+1;		
+	function rhabdoAdd(){ //runs function for adding rhabdo points
+		rhabdo_count=rhabdo_count+1; //increases rhabdo count by one when clicked 		
 	}
 	
-	function domsAdd(){
-		doms_count=doms_count+1;	
+	function domsAdd(){ //runs function for adding DOMS points
+		doms_count=doms_count+1; //increases DOMS count by one when clicked 	
 	}
 	
-	function getResults(){
-		if(rhabdo_count>doms_count){
-			document.write("Probability of you having rhabdomyolitis is "+(rhabdo_count/totalamount)*100+"%.<br>");
+	function getResults(){ //function to calculate and display results 
+		if(rhabdo_count>doms_count){ //displays message for when rhabdo count is higher than DOMS'
+			document.write("Probability of you having rhabdomyolitis is "+(rhabdo_count/totalamount)*100+"%.<br>"); //writes description showing probability and calculates it 
 		}
 		
-		else if(doms_count>rhabdo_count){
-			document.write("Probability of you having Delayed Onset Muscle Soreness is "+(doms_count/totalamount)*100+"%.<br>");
+		else if(doms_count>rhabdo_count){ //displays message for when DOMS count is higher than rhabdo's
+			document.write("Probability of you having Delayed Onset Muscle Soreness is "+(doms_count/totalamount)*100+"%.<br>"); //writes description showing probability and calculates it
 		}
 		
-		else if(doms_count=rhabdo_count){
-			document.write("Equal probability, please see a healthcare professional for further help.");
+		else if(doms_count=rhabdo_count){ //displays message for when counts are equal
+			document.write("Equal probability, please see a healthcare professional for further help."); //writes description to tell individual to consult provider
 		}
 	}
 </script>	
@@ -87,8 +87,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     left: 0vw;
     z-index: 1;
 }
-   img, object{
-      max-height:50%;
+   img, object{ 
+      max-height:50%; 
       max-width:50%;
 }
 
@@ -159,8 +159,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<h1>See results</h1> <!Displays title of page>
 </div>
-	 <p>See your results here!</p> <!Displays question on the page>
-	 <p id="result"></p>
+	 <p>See your results here!</p> <!Displays message on the page>
+	 <p id="result"></p> <!runs ID to get results>
 		<a href="#five" onclick="getResults();" class="w3-btn w3-black"> Results </a> <!Creates results button>
 	</div>
 </div>
